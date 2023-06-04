@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        // taking inputs
+        int a, b, choice;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number");
+        a = sc.nextInt();
+        System.out.println("Enter the Second number");
+        b = sc.nextInt();
+        System.out.println(
+                " For Addition enter 1\n For Subtration enter 2\n For Multiplication enter 3\n For Division enter 4\n ");
+        choice = sc.nextInt();
+        if (choice == 1) {
+            System.out.println("Addition is " + (a + b));
+        } else if (choice == 2) {
+            System.out.println("Suntraction is " + (a - b));
+        } else if (choice == 3) {
+            System.out.println("Multiplication is " + (a * b));
+        } else if (choice == 4) {
+            System.out.println("Addition is " + (a / b));
+        } else {
+            System.out.println("try again");
+        }
+    }
+}
