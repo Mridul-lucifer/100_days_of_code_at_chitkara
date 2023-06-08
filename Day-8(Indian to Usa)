@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class indiantousa {
+    public static void main(String Args[]) {
+        // Input currency in rupees and output in USD.
+        System.out.println("Enter the indian currency : ");
+        Scanner sc = new Scanner(System.in);
+        double a, us = (1 / 82.51);
+        a = sc.nextInt();
+        double usa = a * us;
+        System.out.println("The value is " + usa);
+    }
+}
