@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Addition {
+
+    public static void main(String Args[]) {
+        int add[];
+        System.out.println("Enter the number of numbers : ");
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+        int num = sc.nextInt();
+        for (int i = 1; i <= num; i++) {
+            System.out.println("enter the number : ");
+            Scanner src = new Scanner(System.in);
+            int ele = src.nextInt();
+            add = new int[] { ele };
+            sum = sum + ele;
+        }
+        System.out.println("Sum is " + sum);
+    }
+}
