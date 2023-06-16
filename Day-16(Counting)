@@ -1,0 +1,7 @@
+public class Counting {
+    public static void main(String Args[]) {
+        int[] array = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+        int count = array.length;
+        System.out.println(count);
+    }
+}
