@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Power {
+    public static void main(String Args[]) {
+        int times, value;
+        System.out.print("Enter the Value : ");
+        Scanner sc = new Scanner(System.in);
+        value = sc.nextInt();
+
+        System.out.print("Enter the Power : ");
+        times = sc.nextInt();
+
+        int power = 1;
+
+        for (int i = 1; i <= times; i++) {
+            power = power * value;
+        }
+
+        System.out.println("The result is " + power);
+
+    }
+}
+
+// Calculate the Discount of Product 
+
+import java.util.Scanner;
+
+public class Profit {
+    public static void main(String Args[]) {
+        int cp, sp;
+        System.out.println("Enter the Cost Price and Selling Prices :");
+        Scanner sc = new Scanner(System.in);
+        cp = sc.nextInt();
+        sp = sc.nextInt();
+        if ((sp - cp) >= 0) {
+            System.out.println("Profit is " + (sp - cp));
+        } else {
+            System.out.println("Loss is " + (cp - sp));
+        }
+    }
+}
